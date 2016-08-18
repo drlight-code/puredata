@@ -1,0 +1,13 @@
+#N canvas 2 65 1436 814 10;
+#X obj 78 95 snapshot~, f 14;
+#X obj 144 72 metro 10;
+#X obj 144 54 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 78 117 expr ($f1 + 1) * 0.5;
+#X obj 78 72 osc~ \$1;
+#X obj 78 139 outlet;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 4 0 0 0;
